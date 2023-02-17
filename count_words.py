@@ -1,22 +1,19 @@
 # Get the name of the file and open it
-name=input('Enter file:')
-handle=open(name)
+name = input('Enter file:')
+handle = open(name)
 
 # Create an empty dictionary
-counts=dict()
+counts = {}
 for line in handle:
-    words=line.split()
+    words = line.split()
     for word in words:
-        counts[word]=counts.get(word,0)+1
-        
-        
-bigcount=None 
-bigword=None 
-for word.count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigcount=word 
-        bigcount=count
-        
-        
-print(bigword, bigcount)        
+        counts[word] = counts.get(word, 0) + 1
 
+bigcount = None
+bigword = None
+for word, count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigcount = count
+        bigword = word
+
+print(bigword, bigcount)
