@@ -1,2 +1,3 @@
 Some notes to test the word count
 notes are wery usful in word count 
+from Python Crash Course
