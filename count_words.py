@@ -3,7 +3,7 @@ name = input('Enter file:')
 handle = open(name)
 
 # Create an empty dictionary
-counts = {}
+counts = dict()
 for line in handle:
     words = line.split()
     for word in words:
