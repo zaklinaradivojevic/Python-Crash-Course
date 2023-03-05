@@ -9,4 +9,9 @@ for line in hand:
     wds = line.split()
     #print(wds)
     for w in wds:
-        print(w)
+        if w in di:
+            di[w] = di[w] + 1
+        else:
+            di[w] = 1
+            print("**NEW**")   
+        print(w, di[w])
